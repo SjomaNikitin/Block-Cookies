@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Block Cookies",
+  "version": "1.3",
+  "description": "Chrome extension that block cookies popup",
+  "icons": {
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "content_scripts": [
+    {
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": [
+            "content.js"
+        ],
+        "css": [
+          "styles.css"
+        ]
+    }
+]
+}
